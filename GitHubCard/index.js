@@ -4,13 +4,9 @@
 */
 
 axios.get('https://api.github.com/users/asvka')
-  .then((res) => {
-    const githubData = res.data;
-    // x.forEach((x)=>{
-    //   const newCard = githubCards(x);
-    //   entry.appendChild(newCard);
-    //  });
-    console.log(githubData);
+  .then(res => {
+    const cards = res.data;
+    console.log(cards);
   })
 
 
@@ -24,7 +20,13 @@ axios.get('https://api.github.com/users/asvka')
 /* Step 4: Pass the data received from Github into your function,
            create a new component and add it to the DOM as a child of .cards
 */
+const card = document.createElement('div');
 
+cards.forEach((x)=>{
+      const card = cards(x);
+      cards.appendChild(newCard);
+      return card;
+     });
 /* Step 5: Now that you have your own card getting added to the DOM, either
           follow this link in your browser https://api.github.com/users/<Your github name>/followers
           , manually find some other users' github handles, or use the list found
