@@ -11,7 +11,7 @@ axios.get('https://api.github.com/users/asvka')
     //   entry.appendChild(newCard);
     //  });
     console.log(githubData);
-  })
+  });
 
 
 /* Step 2: Inspect and study the data coming back, this is YOUR
