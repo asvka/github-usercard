@@ -11,7 +11,7 @@ axios
     const list = followersArray.map((user)=>{
       return user.login;
     });
-     const followersList = list.slice(0,20);
+     const followersList = list.slice(0,23);
      return followersList;
   })
   .then((followersList)=>{
